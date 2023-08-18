@@ -1,0 +1,11 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #f1a3de;
+  background-color: rgb(123, 123, 223);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}/*# sourceMappingURL=style.min.css.map */
