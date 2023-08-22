@@ -1,0 +1,10 @@
+
+@mixin flex-center(){
+    display: flex;
+    justify-content: center;
+  }
+
+  @mixin page(){
+    box-sizing: border-box;
+    font-size: 100%;
+  }

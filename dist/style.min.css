@@ -21,4 +21,21 @@ body {
 
 .item {
   color: #efd3a2;
+  padding: 20px;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+}
+
+.heading {
+  color: #1e313e;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }/*# sourceMappingURL=style.min.css.map */
