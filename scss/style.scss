@@ -101,6 +101,36 @@ span{
   font-size: 18px;
   padding: 10px;
   color:#ffffff;
-
 }
+
+iframe{
+  margin: 40px;
+}
+
+footer{
+  background-color: c.$background-color;
+  font-family: f.$font-nav;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: c.$navtext-color;
+  text-transform: uppercase;
+}
+
+a{
+  text-decoration: none;
+  color: c.$navtext-color;
+}
+
+button{
+  padding:30px;
+  margin:10px;
+  border-radius: 30px;
+  background-color: c.$background-color;
+  font-size: 20px;
+}
+
+
 
