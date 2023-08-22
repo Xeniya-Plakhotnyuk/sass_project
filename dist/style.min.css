@@ -38,4 +38,19 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
+}
+
+.section-about {
+  background-color: #1e313e;
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+}
+
+.about {
+  color: #ffffff;
+  align-self: center;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }/*# sourceMappingURL=style.min.css.map */
