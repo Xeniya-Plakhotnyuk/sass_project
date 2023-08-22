@@ -1,11 +1,24 @@
-body {
-  font: 100% Helvetica, sans-serif;
-  color: #f1a3de;
-  background-color: rgb(123, 123, 223);
+html {
+  box-sizing: border-box;
+  font-size: 100%;
 }
 
-header {
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
   display: flex;
-  justify-content: center;
-  padding: 40px;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: #1e313e;
+}
+
+.item {
+  color: #efd3a2;
 }/*# sourceMappingURL=style.min.css.map */

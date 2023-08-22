@@ -1,16 +1,27 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #f1a3de;
-$backg-color: rgb(123, 123, 223);
+@use 'colors' as c;
 
 
-body {
-    font: 100% $font-stack;
-    color: $primary-color;
-    background-color: $backg-color;
-  }
-
-header{
-    display: flex;
-    justify-content: center;
-    padding: 40px;
+html{
+  box-sizing: border-box;
+  font-size: 100%;
 }
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+margin: 0;
+padding: 0;
+}
+
+.nav{
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  background-color: c.$background-color;
+    }
+
+.item{
+  color: c.$navtext-color;
+}    
