@@ -57,3 +57,50 @@ padding: 0;
   font-family: f.$font-nav;
   font-size: 18px;
 }
+
+.wrapper{
+  display: flex;
+  background-color: c.$background-color;
+  padding: 80px;
+  color: #ffffff;
+  
+}
+
+.block{
+  padding: 30px;
+  font-family: f.$font-nav;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+span{
+  font-size: 70px;
+  background-color: c.$block-color;
+  color: c.$background-color;
+  border-radius: 45%;
+  text-align: center;
+  align-self: center;
+  font-family: f.$font-nav;
+ margin: 40px;
+ padding: 20px;
+}
+
+.services{
+  @include l.flex-center();
+  background-color: c.$background-color;
+  padding: 60px;
+}
+
+.prices{
+
+  @include l.flex-center();
+  background-color: c.$background-color;
+  font-family: f.$font-nav;
+  font-size: 18px;
+  padding: 10px;
+  color:#ffffff;
+
+}
+

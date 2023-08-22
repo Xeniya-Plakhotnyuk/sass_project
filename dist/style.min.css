@@ -53,4 +53,48 @@ body {
   padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
+}
+
+.wrapper {
+  display: flex;
+  background-color: #1e313e;
+  padding: 80px;
+  color: #ffffff;
+}
+
+.block {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+}
+
+span {
+  font-size: 70px;
+  background-color: #bb8a5e;
+  color: #1e313e;
+  border-radius: 45%;
+  text-align: center;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 40px;
+  padding: 20px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  background-color: #1e313e;
+  padding: 60px;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  background-color: #1e313e;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
 }/*# sourceMappingURL=style.min.css.map */
