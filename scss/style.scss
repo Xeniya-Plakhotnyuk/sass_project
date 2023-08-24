@@ -3,54 +3,56 @@
 @use 'layout' as l;
 
 
-html{
+html {
   @include l.page();
 }
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-body{
-margin: 0;
-padding: 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.nav{
+.nav {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
   background-color: c.$background-color;
-    }
+}
 
-.item{
+.item {
   color: c.$navtext-color;
   padding: 20px;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   font-family: f.$font-nav;
-}    
+}
 
-.section-header{
+.section-header {
   @include l.flex-center();
 }
 
-.heading{
+.heading {
   color: c.$background-color;
   text-transform: uppercase;
   font-size: 30px;
   font-family: f.$font-nav;
 }
 
-.section-about{
+.section-about {
   background-color: c.$background-color;
   display: flex;
   justify-content: space-around;
   padding: 60px;
 }
 
-.about{
+.about {
   color: #ffffff;
   align-self: center;
   padding: 10px;
@@ -58,24 +60,24 @@ padding: 0;
   font-size: 18px;
 }
 
-.wrapper{
+.wrapper {
   display: flex;
   background-color: c.$background-color;
   padding: 80px;
   color: #ffffff;
-  
+
 }
 
-.block{
+.block {
   padding: 30px;
   font-family: f.$font-nav;
   font-size: 16px;
   display: flex;
   justify-content: space-around;
-  
+
 }
 
-span{
+span {
   font-size: 70px;
   background-color: c.$block-color;
   color: c.$background-color;
@@ -83,31 +85,31 @@ span{
   text-align: center;
   align-self: center;
   font-family: f.$font-nav;
- margin: 40px;
- padding: 20px;
+  margin: 40px;
+  padding: 20px;
 }
 
-.services{
+.services {
   @include l.flex-center();
   background-color: c.$background-color;
   padding: 60px;
 }
 
-.prices{
+.prices {
 
   @include l.flex-center();
   background-color: c.$background-color;
   font-family: f.$font-nav;
   font-size: 18px;
   padding: 10px;
-  color:#ffffff;
+  color: #ffffff;
 }
 
-iframe{
+iframe {
   margin: 40px;
 }
 
-footer{
+footer {
   @include l.flex-center();
   flex-direction: column;
   background-color: c.$background-color;
@@ -116,70 +118,78 @@ footer{
   padding: 5px;
   color: c.$navtext-color;
   text-transform: uppercase;
-  p{
+
+  p {
     align-self: center;
   }
 }
 
-a{
+a {
   text-decoration: none;
   color: c.$navtext-color;
 }
 
-button{
-  padding:30px;
-  margin:10px;
+button {
+  padding: 30px;
+  margin: 10px;
   border-radius: 30px;
   background-color: c.$background-color;
   font-size: 20px;
 }
 
-@media all and (max-width: 800px){
-.nav{
-  @include l.flex-column();
+@media all and (max-width: 800px) {
+  .nav {
+    @include l.flex-column();
 
-  .item{
-    @include l.flex-center();
+    .item {
+      @include l.flex-center();
+    }
   }
-}
-.section-about{
-  flex-wrap: wrap;
 
-  button{
-    @include l.flex-center();
+  .section-about {
+    flex-wrap: wrap;
+
+    button {
+      @include l.flex-center();
+    }
+
+    img {
+      width: 50%;
+    }
   }
-  img{
-    width: 50%;
+
+  .wrapper {
+    @include l.flex-column();
+    justify-content: space-between;
+
+    span {
+      padding: 10px;
+      font-size: 40px;
+      margin: 10px;
+    }
   }
-}
-.wrapper{
-  @include l.flex-column();
-  justify-content: space-between;
-   span{
-    padding: 10px;
-    font-size: 40px;
-    margin:10px;
+
+  .services img {
+    width: 90%;
   }
-}
-.services img{
-width: 90%;
-}
-.prices{
-  flex-wrap: wrap;
 
-img{
-  width: 40%;
-}
-p{
-@include l.flex-center(); 
-font-size: 16px;
-max-width: 300px;
+  .prices {
+    flex-wrap: wrap;
+
+    img {
+      width: 40%;
+    }
+
+    p {
+      @include l.flex-center();
+      font-size: 16px;
+      max-width: 300px;
+    }
   }
+
+  div .gmap-canvas {
+    width: 100%;
+  }
+
+
 }
-
-
-
-}
-
-
-
