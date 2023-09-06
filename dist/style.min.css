@@ -12,13 +12,14 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #FAFAFA;
 }
 
 .nav {
   display: flex;
   justify-content: flex-end;
   padding: 10px;
-  background-color: #1e313e;
+  background-color: #27272A;
 }
 
 .item {
@@ -36,14 +37,14 @@ body {
 }
 
 .heading {
-  color: #1e313e;
+  color: #27272A;
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
 .section-about {
-  background-color: #1e313e;
+  background-color: #27272A;
   display: flex;
   justify-content: space-around;
   padding: 60px;
@@ -59,7 +60,7 @@ body {
 
 .wrapper {
   display: flex;
-  background-color: #1e313e;
+  background-color: #27272A;
   padding: 80px;
   color: #ffffff;
 }
@@ -75,7 +76,7 @@ body {
 span {
   font-size: 70px;
   background-color: #bb8a5e;
-  color: #1e313e;
+  color: #27272A;
   border-radius: 45%;
   text-align: center;
   align-self: center;
@@ -87,14 +88,14 @@ span {
 .services {
   display: flex;
   justify-content: center;
-  background-color: #1e313e;
+  background-color: #27272A;
   padding: 60px;
 }
 
 .prices {
   display: flex;
   justify-content: center;
-  background-color: #1e313e;
+  background-color: #27272A;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 10px;
@@ -109,7 +110,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-color: #1e313e;
+  background-color: #27272A;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   padding: 5px;
@@ -120,7 +121,7 @@ footer p {
   align-self: center;
 }
 
-a {
+.link {
   text-decoration: none;
   color: #efd3a2;
 }
@@ -129,8 +130,14 @@ button {
   padding: 30px;
   margin: 10px;
   border-radius: 30px;
-  background-color: #1e313e;
-  font-size: 20px;
+  background-color: #F5A524;
+  border: none;
+  font-size: 16px;
+  font-weight: bolder;
+}
+button a {
+  text-decoration: none;
+  color: #27272A;
 }
 
 @media all and (max-width: 800px) {

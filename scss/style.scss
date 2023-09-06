@@ -16,6 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background-color: #FAFAFA;
 }
 
 .nav {
@@ -124,7 +125,7 @@ footer {
   }
 }
 
-a {
+.link{
   text-decoration: none;
   color: c.$navtext-color;
 }
@@ -133,9 +134,16 @@ button {
   padding: 30px;
   margin: 10px;
   border-radius: 30px;
-  background-color: c.$background-color;
-  font-size: 20px;
+  background-color: #F5A524;
+  border: none;
+  font-size: 16px;
+  font-weight: bolder;
+  a{
+    text-decoration: none;
+    color: c.$background-color;
+  }
 }
+
 
 @media all and (max-width: 800px) {
   .nav {
